@@ -25,7 +25,6 @@ function quoteOptions(options, str) {
 
 function quote(str) {
   if (typeof str === 'object') {
-    console.log('returning bound quoteOptions');
     return quoteOptions.bind(null, str);
   }
   return quoteOptions(str);
