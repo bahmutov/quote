@@ -19,6 +19,15 @@ Use
     quote('"foo"'); // "foo"
     quote(quote('foo')); // "foo"
 
+## Changing quote character
+
+Only single quote character is supported, default is double quotes `"`.
+To change:
+
+    var quote = require('quote')({ quotes: '*' });
+    quote('foo'); // *foo*
+    quote('bar'); // *bar*
+
 ## Small print
 
 Author: Gleb Bahmutov &copy; 2014

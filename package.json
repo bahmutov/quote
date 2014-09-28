@@ -1,6 +1,6 @@
 {
   "name": "quote",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Add quotes to given string unless it already has them",
   "main": "index.js",
   "scripts": {
