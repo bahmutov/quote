@@ -2,11 +2,11 @@
 
 > Safe quoting a given string without adding duplicate quotes
 
-[![NPM info][nodei.co]](https://npmjs.org/package/grunt-nice-package)
+[![NPM info][nodei.co]](https://npmjs.org/package/quote)
 
 [![Build status][ci-image]][ci-url]
 [![dependencies][dependencies-image]][dependencies-url]
-[![devdependencies][grunt-nice-package-devdependencies-image] ][grunt-nice-package-devdependencies-url]
+[![devdependencies][quote-devdependencies-image] ][quote-devdependencies-url]
 
 Install (node)
 
