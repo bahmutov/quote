@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/bahmutov/quote",
   "devDependencies": {
-    "gt": "0.8.44",
+    "gt": "0.8.47",
     "pre-git": "0.1.1"
   },
   "pre-commit": "npm test"
