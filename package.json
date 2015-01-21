@@ -4,6 +4,7 @@
   "description": "Add quotes to given string unless it already has them",
   "main": "index.js",
   "scripts": {
+    "build": "node node_modules/umd/bin/cli.js -c quote index.js quote.js",
     "test": "node node_modules/gt test/test.js"
   },
   "repository": {
@@ -24,8 +25,12 @@
   },
   "homepage": "https://github.com/bahmutov/quote",
   "devDependencies": {
+    "clean-console": "0.2.2",
+    "console-log-div": "0.0.5",
+    "es5-shim": "4.0.5",
     "gt": "0.8.47",
-    "pre-git": "0.1.1"
+    "pre-git": "0.1.1",
+    "umd": "2.1.0"
   },
   "pre-commit": "npm test"
 }
