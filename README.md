@@ -8,16 +8,20 @@
 [![dependencies][dependencies-image]][dependencies-url]
 [![devdependencies][quote-devdependencies-image] ][quote-devdependencies-url]
 
-Install (node)
+Install using node or bower
 
-    npm i quote --save
+    npm install quote --save
+    bower install quote --save
 
 Use
 
+    // node
     var quote = require('quote');
     quote('foo'); // "foo"
     quote('"foo"'); // "foo"
     quote(quote('foo')); // "foo"
+
+In the browser just use global function `quote`
 
 ## Changing quote character
 
