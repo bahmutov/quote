@@ -1,6 +1,10 @@
+function emptyQuotes(options) {
+  return options.quotes + options.quotes;
+}
+
 function quoteString(options, str) {
   if (str === '') {
-    return options.quotes + options.quotes;
+    return emptyQuotes(options);
   }
   if (str[0] !== options.quotes) {
     str = options.quotes + str;
@@ -20,6 +24,11 @@ function quoteOptions(options, str) {
   if (typeof str === 'string') {
     return quoteString(options, str);
   }
+
+  if (typeof str === 'undefined' || str === null) {
+    return emptyQuotes(options);
+  }
+
   return str;
 }
 

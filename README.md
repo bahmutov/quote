@@ -32,6 +32,14 @@ To change:
     quote('foo'); // *foo*
     quote('bar'); // *bar*
 
+## To build and test
+
+Because this is both Node and browser package, you need to build it using 
+[universal module definition CLI tool](https://github.com/ForbesLindesay/umd).
+
+    npm run build
+    npm test
+
 ## Small print
 
 Author: Gleb Bahmutov &copy; 2014

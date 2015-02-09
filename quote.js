@@ -1,7 +1,11 @@
 !function(e){if("object"==typeof exports&&"undefined"!=typeof module)module.exports=e();else if("function"==typeof define&&define.amd)define([],e);else{var f;"undefined"!=typeof window?f=window:"undefined"!=typeof global?f=global:"undefined"!=typeof self&&(f=self),f.quote=e()}}(function(){var define,module,exports;module={exports:(exports={})};
+function emptyQuotes(options) {
+  return options.quotes + options.quotes;
+}
+
 function quoteString(options, str) {
   if (str === '') {
-    return options.quotes + options.quotes;
+    return emptyQuotes(options);
   }
   if (str[0] !== options.quotes) {
     str = options.quotes + str;
@@ -21,6 +25,11 @@ function quoteOptions(options, str) {
   if (typeof str === 'string') {
     return quoteString(options, str);
   }
+
+  if (typeof str === 'undefined' || str === null) {
+    return emptyQuotes(options);
+  }
+
   return str;
 }
 

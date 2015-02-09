@@ -2,6 +2,10 @@ gt.module('quote');
 
 var quote = require('../quote');
 
+gt.test('quote undefined', function () {
+  gt.equal(quote(), '""');
+});
+
 gt.test('quotes a string', function () {
   gt.equal(quote(''), '""');
   gt.equal(quote('foo'), '"foo"');
