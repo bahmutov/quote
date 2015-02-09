@@ -33,5 +33,5 @@
     "pre-git": "0.1.1",
     "umd": "2.1.0"
   },
-  "pre-commit": ["npm run build", "npm test"]
+  "pre-commit": ["npm run build", "npm test", "npm version"]
 }
