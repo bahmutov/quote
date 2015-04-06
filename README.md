@@ -32,6 +32,8 @@ To change:
     quote('foo'); // *foo*
     quote('bar'); // *bar*
 
+For common markdown quote characters, use [quote-markdown](https://github.com/bahmutov/quote-markdown).
+
 ## To build and test
 
 Because this is both Node and browser package, you need to build it using 
