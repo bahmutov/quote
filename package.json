@@ -4,9 +4,9 @@
   "description": "Add quotes to given string unless it already has them",
   "main": "quote.js",
   "scripts": {
-    "build": "node node_modules/umd/bin/cli.js -c quote index.js quote.js",
-    "test": "node node_modules/gt test/test.js",
-    "test-index": "node node_modules/clean-console/index.js -i test/index.html"
+    "build": "umd -c quote index.js quote.js",
+    "test": "gt test/test.js",
+    "test-index": "clean-console -i test/index.html"
   },
   "repository": {
     "type": "git",
